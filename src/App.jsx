@@ -1,20 +1,12 @@
-// import Question from "./components/quest/questionnaire";
-// import ButtonValidate from "./components/quest/buttonValidate";
+import { Outlet } from "react-router-dom";
 import "./App.css";
-import Matthieu from "./components/shaman/Matthieu/Matthieu";
-// import MainPage from "./components/mainPage/MainPage";
 
 function App() {
   return (
     <>
-      <Matthieu />
-
-      {/* <div className="quest_butt">
-        <Question classeName="quest" />
-        <ButtonValidate className="butVal" />
-      </div>
-
-      <MainPage /> */}
+      <main>
+        <Outlet />
+      </main>
     </>
   );
 }
