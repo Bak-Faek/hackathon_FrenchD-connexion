@@ -8,26 +8,31 @@ import HomePage from "./pages/Home";
 import QuizzPage from "./pages/Quizz";
 import Matthieu from "./components/shaman/Matthieu/Matthieu";
 import MainPage from "./components/mainPage/MainPage";
+import Pomodoro from "./pages/Pomodoro";
 
 const router = createBrowserRouter([
   {
     element: <App />,
     children: [
       {
-        path: "/",
+        path: '/',
         element: <MainPage />,
       },
       {
-        path: "/home",
+        path: '/home',
         element: <HomePage />,
       },
       {
-        path: "/Quiz",
+        path: '/Quiz',
         element: <QuizzPage />,
       },
       {
-        path: "/shaman",
+        path: '/shaman',
         element: <Matthieu />,
+      },
+      {
+        path: '/relaxation',
+        element: <Pomodoro/>,
       },
     ],
   },

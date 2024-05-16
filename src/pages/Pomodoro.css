@@ -1,5 +1,5 @@
 .container-pomodoro{
-  background-image: url('/public/pomodoro_background.png');
+  background-image: url('/pomodoro_background.png');
 background-size: cover;
 background-repeat: no-repeat;
 }
