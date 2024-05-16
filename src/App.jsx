@@ -6,6 +6,7 @@ import Pomodoro from './pages/Pomodoro';
 function App() {
   return (
     <>
+      
       {/* <MainPage /> */}
       <Pomodoro />
     </>

@@ -1,0 +1,17 @@
+.slider{
+  height: 40px;
+  border: 2px solid red;
+  border-radius: 20px;
+  width: 40%;
+}
+
+.slider.green{
+  border: 2px solid green;
+  
+  
+}
+
+.thumb.green{
+  background-color: green;
+  
+}
