@@ -1,9 +1,9 @@
-
+import "./buttonValidate.css"
 import Button from '@mui/material/Button';
 
 function ButtonValidate() {
     return (
-    <Button variant="contained" buttonValidate>
+    <Button className="valid" variant="contained" buttonValidate>
       Validate
     </Button>
   );
