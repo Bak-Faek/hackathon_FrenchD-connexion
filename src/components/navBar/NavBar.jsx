@@ -11,7 +11,6 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import './NavBar.css'
 
 const pages = ['Expériences', 'Chamanisme', 'ASMR'];
@@ -37,10 +36,10 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static">
-      <Container sx={{ padding:0, bgcolor:'green' }}maxWidth="xl">
-        <Toolbar sx={{ padding:0, bgcolor:'green' }} disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+    <AppBar sx={{ padding:0, bgcolor:'green' }}position="static">
+      <Container maxWidth="xl">
+        <Toolbar  disableGutters>
+          
           <Typography
             variant="h6"
             noWrap
@@ -95,12 +94,11 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          
           <Typography
             variant="h5"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },

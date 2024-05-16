@@ -43,7 +43,7 @@ export default function Matthieu() {
         </div>
 
         <div className="contact">
-          <h3>Pour Rejoindre Matthieu :</h3>
+          <h3>Pour rejoindre Matthieu :</h3>
           <p>Cabane de Matthieu</p>
           <p>Chemin des Esprits Sauvages Forêt de l&apos;Aube</p>
           <p>12345 Harmonie-sur-Verdure, France</p>
