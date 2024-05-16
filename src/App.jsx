@@ -1,9 +1,11 @@
 import "./App.css";
-import MainPage from "./components/MainPage";
+import Matthieu from "./components/shaman/Matthieu/Matthieu";
+// import MainPage from "./components/mainPage/MainPage";
 
 function App() {
   return <>
-  <MainPage/>
+  {/* <MainPage/> */}
+  <Matthieu/>
   </>;
 }
 
