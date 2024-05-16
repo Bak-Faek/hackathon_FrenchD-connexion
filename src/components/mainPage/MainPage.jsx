@@ -13,7 +13,7 @@ export default function MainPage() {
         </div>
       <video className="video" autoPlay loop muted>
         {/* <source src={'../public/lavender.mp4'} type="video/mp4" /> */}
-        <source src={'../public/woman.mp4'} type="video/mp4" />
+        <source src={'/woman.mp4'} type="video/mp4" />
       </video>
     </div>
   );
