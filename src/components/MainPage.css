@@ -32,6 +32,12 @@ h2{
     z-index: 2;
 }
 
-button{
+Button{
     z-index: 2;
+    -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
+    backdrop-filter: blur(15px);
+    background-color: rgba(182, 182, 182, 0.2);
+    height: 2rem;
+
+
 }
