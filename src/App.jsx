@@ -2,6 +2,7 @@ import Question from "./components/quest/questionnaire";
 import ButtonValidate from "./components/quest/buttonValidate";
 import "./App.css";
 // import MainPage from "./components/MainPage";
+import DestinationsPage from "./components/quest/DestinationsPage";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
 
       {/* <MainPage /> */}
       <questionnaire />
+      <DestinationsPage />
       
       
   </>
