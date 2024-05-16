@@ -8,7 +8,7 @@ import "./questionnaire.css"
 export default function Question() {
   return (
     <FormControl>
-      <FormLabel id="firstQ">essentiel est elle ailleur pour vous</FormLabel>
+      <FormLabel id="firstQ">L&apos;essentiel est elle ailleur pour vous</FormLabel>
       <RadioGroup
         row
         aria-labelledby="firstQ"
@@ -61,6 +61,3 @@ export default function Question() {
     </FormControl>
   );
 }
-
-
-
