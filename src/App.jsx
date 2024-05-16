@@ -1,7 +1,10 @@
 import "./App.css";
+import MainPage from "./components/MainPage";
 
 function App() {
-  return <></>;
+  return <>
+  <MainPage/>
+  </>;
 }
 
 export default App;
