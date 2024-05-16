@@ -15,8 +15,8 @@ function Settings() {
       <label htmlFor=''>Temps de travail : {settingsInfo.workMinutes}:00</label>
       <ReactSlider
         className='slider'
-        thumbClassName={'thumb'}
-        trackClassName={'track'}
+        thumbClassName='thumb'
+        trackClassName='track'
         value={settingsInfo.workMinutes}
         onChange={(newValue) => settingsInfo.setWorkMinutes(newValue)}
         min={1}
@@ -29,7 +29,7 @@ function Settings() {
       <ReactSlider
         className='slider green'
         thumbClassName='thumb green'
-        trackClassName={'track'}
+        trackClassName='track'
         value={settingsInfo.breakMinutes}
         onChange={(newValue) => settingsInfo.setBreakMinutes(newValue)}
         min={1}
