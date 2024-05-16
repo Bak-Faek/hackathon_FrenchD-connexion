@@ -15,12 +15,14 @@ function Timer() {
   const settingsInfo = useContext(SettingsContext);
 
   const [isPaused, setIsPaused] = useState(true);
-  const [mode, setMode] = useState('work'); // work/break/null
+  // const [mode, setMode] = useState('work'); // work/break/null
   const [secondsLeft, setSecondsLeft] = useState(0);
 
   const secondsLeftRef = useRef(secondsLeft);
   const isPausedRef = useRef(isPaused);
-  const modeRef = useRef(mode);
+  // const modeRef = useRef(mode);
+  const modeRef = useRef(settingsInfo.mode);
+  
 
   function tick() {
     secondsLeftRef.current--;
@@ -28,10 +30,26 @@ function Timer() {
   }
 
 
-  // function playBreakSound() {
-  //    const audio = new Audio('/public/Fluide.mp3');
-  //    audio.play();
-  // }
+const audioRef = useRef(null);
+
+const playAudio = () => {
+  audioRef.current
+    .play()
+    .catch((error) => console.error('Erreur de lecture audio : ', error));
+};
+
+const pauseAudio = () => {
+  audioRef.current.pause();
+};
+
+if (settingsInfo.mode === 'break') {
+  playAudio();
+}
+
+if (settingsInfo.mode === 'break' && isPausedRef.current) {
+  pauseAudio();
+}
+
 
   useEffect(() => {
     function switchMode() {
@@ -41,8 +59,10 @@ function Timer() {
           ? settingsInfo.workMinutes
           : settingsInfo.breakMinutes) * 60;
 
-      setMode(nextMode);
+      // setMode(nextMode);
+      settingsInfo.mode=nextMode;
       modeRef.current = nextMode;
+     
 
       setSecondsLeft(nextSeconds);
       secondsLeftRef.current = nextSeconds;
@@ -55,22 +75,31 @@ function Timer() {
 
     const interval = setInterval(() => {
       if (isPausedRef.current) {
+       
         return;
       }
       if (secondsLeftRef.current === 0) {
+         
         return switchMode();
       }
 
       tick();
     }, 100);
 
-    return () => clearInterval(interval);
+    return () => 
+      clearInterval(interval);
+    
+     
   }, [settingsInfo]);
 
-  const totalSeconds =
-    mode === 'work'
-      ? settingsInfo.workMinutes * 60
-      : settingsInfo.breakMinutes * 60;
+  // const totalSeconds =
+  //   mode === 'work'
+  //     ? settingsInfo.workMinutes * 60
+  //     : settingsInfo.breakMinutes * 60;
+    const totalSeconds =
+      settingsInfo.mode === 'work'
+        ? settingsInfo.workMinutes * 60
+        : settingsInfo.breakMinutes * 60;
   const percentage = Math.round((secondsLeft / totalSeconds) * 100);
 
   const minutes = Math.floor(secondsLeft / 60);
@@ -79,6 +108,7 @@ function Timer() {
 
   return (
     <>
+      <audio ref={audioRef} src='/public/Fluide.mp3' />
       <div className='progressbar-container'>
         <div style={{ width: 200, height: 200 }}>
           <CircularProgressbar
@@ -87,7 +117,8 @@ function Timer() {
             text={minutes + ':' + seconds}
             styles={buildStyles({
               textColor: 'black',
-              pathColor: mode === 'work' ? red : green,
+              // pathColor: mode === 'work' ? red : green,
+              pathColor: settingsInfo.mode === 'work' ? red : green,
               tailColor: 'rgba(255,255,255,.2)',
             })}
           />
