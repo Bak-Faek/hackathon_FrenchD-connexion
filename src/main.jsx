@@ -7,7 +7,7 @@ import App from "./App";
 import HomePage from "./pages/Home"
 import QuizzPage from "./pages/Quizz";
 import Matthieu from "./components/shaman/Matthieu/Matthieu";
-
+import ImagesPage from "./pages/ImagesPage";
 const router = createBrowserRouter([
   {
     element: <App />,
@@ -24,7 +24,10 @@ const router = createBrowserRouter([
         path: "/shaman",
         element: <Matthieu/>,
       },
-      
+      {
+        path: "/Images",
+        element: <ImagesPage />
+      }
     ],
   },
 ]);
