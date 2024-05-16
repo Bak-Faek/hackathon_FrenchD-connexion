@@ -1,4 +1,3 @@
-
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -9,7 +8,7 @@ import "./questionnaire.css"
 export default function Question() {
   return (
     <FormControl>
-      <FormLabel id="firstQ">l'essentiel est elle ailleur pour vous</FormLabel>
+      <FormLabel id="firstQ">essentiel est elle ailleur pour vous</FormLabel>
       <RadioGroup
         row
         aria-labelledby="firstQ"
@@ -62,5 +61,6 @@ export default function Question() {
     </FormControl>
   );
 }
+
 
 

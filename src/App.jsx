@@ -1,7 +1,8 @@
 import Question from "./components/quest/questionnaire";
 import ButtonValidate from "./components/quest/buttonValidate";
 import "./App.css";
-import MainPage from "./components/MainPage";
+// import MainPage from "./components/MainPage";
+
 
 function App() {
   return (
@@ -11,8 +12,10 @@ function App() {
         <ButtonValidate className="butVal" />
       </div>
 
-      <MainPage />
-    
+      {/* <MainPage /> */}
+      <questionnaire />
+      
+      
   </>
   );
 }
