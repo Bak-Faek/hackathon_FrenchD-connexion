@@ -30,7 +30,8 @@ function Timer() {
   }
 
 
-const audioRef = useRef(null);
+  const audioRef = useRef(null);
+  
 
 const playAudio = () => {
   audioRef.current
@@ -108,7 +109,7 @@ if (settingsInfo.mode === 'break' && isPausedRef.current) {
 
   return (
     <>
-      <audio ref={audioRef} src='/public/Fluide.mp3' />
+      <audio ref={audioRef} src='/public/Astrance.mp3' />
       <div className='progressbar-container'>
         <div style={{ width: 200, height: 200 }}>
           <CircularProgressbar
@@ -117,7 +118,6 @@ if (settingsInfo.mode === 'break' && isPausedRef.current) {
             text={minutes + ':' + seconds}
             styles={buildStyles({
               textColor: 'black',
-              // pathColor: mode === 'work' ? red : green,
               pathColor: settingsInfo.mode === 'work' ? red : green,
               tailColor: 'rgba(255,255,255,.2)',
             })}
