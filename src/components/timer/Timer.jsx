@@ -86,7 +86,7 @@ function Timer() {
             value={percentage}
             text={minutes + ':' + seconds}
             styles={buildStyles({
-              textColor: '#fff',
+              textColor: 'black',
               pathColor: mode === 'work' ? red : green,
               tailColor: 'rgba(255,255,255,.2)',
             })}

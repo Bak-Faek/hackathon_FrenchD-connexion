@@ -3,12 +3,18 @@
   border: 2px solid red;
   border-radius: 20px;
   width: 40%;
+  
 }
 
 .slider.green{
   border: 2px solid green;
   
   
+}
+
+label{
+  color:black;
+  font-size: 1.4rem;
 }
 
 .thumb.green{
