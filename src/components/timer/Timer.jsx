@@ -1,15 +1,14 @@
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-import './Timer.css'
-import PlayButton from './PlayButton';
-import PauseButton from './PauseButton';
-import SettingsButton from './SettingsButton';
-
+import './Timer.css';
+import PlayButton from '../playButton/PlayButton';
+import PauseButton from '../pauseButton/PauseButton';
+import SettingsButton from '../settingsButton/SettingsButton';
 
 function Timer() {
   const percentage = 60;
 
-  const red ='#FF3131';
+  const red = '#FF3131';
   const green = '#00BF63';
   return (
     <>
@@ -30,7 +29,7 @@ function Timer() {
           <PauseButton />
         </div>
         <div>
-          <SettingsButton/>
+          <SettingsButton />
         </div>
       </div>
     </>

@@ -1,15 +1,15 @@
-import "./App.css";
-import Timer from "./components/Timer";
-import MainPage from "./components/MainPage";
+import './App.css';
+import Pomodoro from './pages/Pomodoro';
 
-
-
+// import MainPage from "./components/MainPage";
 
 function App() {
-  return <>
-      <MainPage />
-       <Timer/>
-  </>;
+  return (
+    <>
+      {/* <MainPage /> */}
+      <Pomodoro />
+    </>
+  );
 }
 
 export default App;
