@@ -7,8 +7,9 @@ import App from "./App";
 import HomePage from "./pages/Home";
 import QuizzPage from "./pages/Quizz";
 import Matthieu from "./components/shaman/Matthieu/Matthieu";
-import MainPage from "./components/mainPage/MainPage";
+// import MainPage from "./components/mainPage/MainPage";
 import Pomodoro from "./pages/Pomodoro";
+import MainPageTest from "./components/mainPage/MainPageTest";
 
 const router = createBrowserRouter([
   {
@@ -16,7 +17,8 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <MainPage />,
+        // element: <MainPage />,
+        element: <MainPageTest />,
       },
       {
         path: '/home',
@@ -32,7 +34,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/relaxation',
-        element: <Pomodoro/>,
+        element: <Pomodoro />,
       },
     ],
   },
