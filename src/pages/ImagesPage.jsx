@@ -1,5 +1,6 @@
-import { useState } from 'react';
-import './ImagesPage.css';
+/* eslint-disable react/no-unescaped-entities */
+import { useState } from "react";
+import "./ImagesPage.css";
 
 const ImagesPage = () => {
   // Tableau de données des images
@@ -22,15 +23,15 @@ const ImagesPage = () => {
   };
 
   const handleMouseEnter = () => {
-    // Démarrage de l'animation de l'oiseau 
-    const bird = document.getElementById('bird');
-    bird.classList.add('fly');
+    // Démarrage de l'animation de l'oiseau
+    const bird = document.getElementById("bird");
+    bird.classList.add("fly");
   };
 
   const handleMouseLeave = () => {
-    // Arrêt l'animation de l'oiseau 
-    const bird = document.getElementById('bird');
-    bird.classList.remove('fly');
+    // Arrêt l'animation de l'oiseau
+    const bird = document.getElementById("bird");
+    bird.classList.remove("fly");
   };
 
   const groupedImages = [];
@@ -41,8 +42,17 @@ const ImagesPage = () => {
   return (
     <div className="images-container" onMouseMove={handleMouseMove}>
       <h2>Vos destinations</h2>
-      <h3>Partez à la découverte d'endroits qui font rêver!</h3>
-      <h3>Vous avez </h3>
+      <h3>
+        Partez à la découverte des endroits qui vous ont toujours fait rêver!
+      </h3>
+      <h4>Vous avez un large choix de destinations insolites. </h4>
+      <p>
+        Plongez dans une immersion dans l'univers déconnecté! A l'abris des
+        routines mouvementées, au quotien souvent agité entre travail et
+        domicile.
+        <br /> Venez vivre un dépaysement à travers une aventure et une
+        expédition authentiques et inoubliables.
+      </p>
       {groupedImages.map((group, index) => (
         <div key={index}>
           <div className="image-group">
@@ -60,10 +70,13 @@ const ImagesPage = () => {
         </div>
       ))}
       {/* Oiseau animé */}
-      <div id="bird" className="bird" style={{ left: birdPosition.x, top: birdPosition.y }}></div>
+      <div
+        id="bird"
+        className="bird"
+        style={{ left: birdPosition.x, top: birdPosition.y }}
+      ></div>
     </div>
   );
 };
 
 export default ImagesPage;
-
