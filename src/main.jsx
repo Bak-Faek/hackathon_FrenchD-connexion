@@ -5,11 +5,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
 import HomePage from "./pages/Home";
-import QuizzPage from "./pages/Quizz";
 import Matthieu from "./components/shaman/Matthieu/Matthieu";
 // import MainPage from "./components/mainPage/MainPage";
 import Pomodoro from "./pages/Pomodoro";
 import MainPageTest from "./components/mainPage/MainPageTest";
+import ImagesPage from "./pages/ImagesPage";
 
 const router = createBrowserRouter([
   {
@@ -25,10 +25,6 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: '/Quiz',
-        element: <QuizzPage />,
-      },
-      {
         path: '/shaman',
         element: <Matthieu />,
       },
@@ -36,6 +32,10 @@ const router = createBrowserRouter([
         path: '/relaxation',
         element: <Pomodoro />,
       },
+      {
+        path: '/images',
+        element: <ImagesPage />
+      }
     ],
   },
 ]);

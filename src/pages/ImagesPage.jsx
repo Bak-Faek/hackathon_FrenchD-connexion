@@ -40,7 +40,9 @@ const ImagesPage = () => {
 
   return (
     <div className="images-container" onMouseMove={handleMouseMove}>
-      <h1>Vos destinations</h1>
+      <h2>Vos destinations</h2>
+      <h3>Partez à la découverte d'endroits qui font rêver!</h3>
+      <h3>Vous avez </h3>
       {groupedImages.map((group, index) => (
         <div key={index}>
           <div className="image-group">
