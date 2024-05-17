@@ -13,6 +13,7 @@ import Shaman from "./pages/Shaman";
 import Matthieu from "./components/shaman/Matthieu/Matthieu";
 import Vivien from "./components/shaman/Vivien/Vivien";
 import William from "./components/shaman/William/William";
+import ImagesPage from "./pages/ImagesPage";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/Quiz",
         element: <QuizzPage />,
+      },
+      {
+        path: '/images',
+        element: <ImagesPage />
       },
       {
         path: "/shaman",
