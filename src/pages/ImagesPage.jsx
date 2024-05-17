@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './ImagesPage.css'; // Assurez-vous d'avoir un fichier CSS pour les styles
+import './ImagesPage.css';
 
 const ImagesPage = () => {
   // Tableau de données des images
