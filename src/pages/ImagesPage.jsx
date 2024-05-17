@@ -22,13 +22,13 @@ const ImagesPage = () => {
   };
 
   const handleMouseEnter = () => {
-    // Démarrez l'animation de l'oiseau ici
+    // Démarrage de l'animation de l'oiseau 
     const bird = document.getElementById('bird');
     bird.classList.add('fly');
   };
 
   const handleMouseLeave = () => {
-    // Arrêtez l'animation de l'oiseau ici
+    // Arrêt l'animation de l'oiseau 
     const bird = document.getElementById('bird');
     bird.classList.remove('fly');
   };
