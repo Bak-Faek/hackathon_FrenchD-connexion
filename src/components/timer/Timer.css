@@ -1,0 +1,21 @@
+body{
+  background-color: black;
+  }
+
+
+.progressbar-container{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.button-container{
+  display: flex;
+  gap: 10px;
+}
+

@@ -1,11 +1,16 @@
+import './App.css';
+// import Pomodoro from './pages/Pomodoro';
+
+// import MainPage from "./components/MainPage";
 import { Outlet } from "react-router-dom";
-import "./App.css";
+
 
 function App() {
   return (
     <>
       <main>
         <Outlet />
+        {/* <Pomodoro/> */}
       </main>
     </>
   );

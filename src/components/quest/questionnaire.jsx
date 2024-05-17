@@ -7,16 +7,17 @@ import "./questionnaire.css"
 
 export default function Question() {
   return (
-    <FormControl>
-      <FormLabel id="firstQ">L&apos;essentiel est elle ailleur pour vous</FormLabel>
+    <div className='Q'>
+<FormControl>
+      <FormLabel id="firstQ">L&apos;essentiel pour vous est:</FormLabel>
       <RadioGroup
-        row
+       column
         aria-labelledby="firstQ"
         name="row-radio-buttons-group"
       >
-        <FormControlLabel value="chamane1" control={<Radio />} label="vercors" />
-        <FormControlLabel value="coaching1" control={<Radio />} label="annecy" />
-        <FormControlLabel value="sport1" control={<Radio />} label="connecticut" />
+        <FormControlLabel value="chamane1" control={<Radio />} label="la détente" />
+        <FormControlLabel value="coaching1" control={<Radio />} label="Sortir des sentiers" />
+        <FormControlLabel value="sport1" control={<Radio />} label="être guidé" />
         <FormControlLabel
           value="disabled"
           disabled
@@ -25,15 +26,15 @@ export default function Question() {
         />
       </RadioGroup>
 
-      <FormLabel id="secondQ">shouaitez-vous suivre le guide coaching</FormLabel>
+      <FormLabel id="secondQ">La deconnexion vous inspire: </FormLabel>
       <RadioGroup
-        row
+        column
         aria-labelledby="firstQ"
         name="row-radio-buttons-group"
       >
-        <FormControlLabel value="chamane2" control={<Radio />} label="vercors" />
-        <FormControlLabel value="coaching2" control={<Radio />} label="annecy" />
-        <FormControlLabel value="sport2" control={<Radio />} label="connecticut" />
+        <FormControlLabel value="chamane2" control={<Radio />} label="la spiritualié" />
+        <FormControlLabel value="coaching2" control={<Radio />} label="le défoulememt" />
+        <FormControlLabel value="sport2" control={<Radio />} label="l'accompagnement" />
         <FormControlLabel
           value="disabled"
           disabled
@@ -42,15 +43,15 @@ export default function Question() {
         />
       </RadioGroup>
 
-      <FormLabel id="thirdQ">Quel adrénaline vous inspire</FormLabel>
+      <FormLabel id="thirdQ">Vous aspirez à être: </FormLabel>
       <RadioGroup
-        row
+        column
         aria-labelledby="firstQ"
         name="row-radio-buttons-group"
       >
-        <FormControlLabel value="chamane1" control={<Radio />} label="vercors" />
-        <FormControlLabel value="coaching1" control={<Radio />} label="annecy" />
-        <FormControlLabel value="sport1" control={<Radio />} label="connecticut" />
+        <FormControlLabel value="chamane1" control={<Radio />} label="seul" />
+        <FormControlLabel value="coaching1" control={<Radio />} label="en groupe" />
+        <FormControlLabel value="sport1" control={<Radio />} label="peu-importe" />
         <FormControlLabel
           value="disabled"
           disabled
@@ -59,5 +60,7 @@ export default function Question() {
         />
       </RadioGroup>
     </FormControl>
+    </div>
+    
   );
 }
