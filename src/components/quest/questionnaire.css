@@ -10,3 +10,7 @@
  
 }
 
+.buttonValidate{
+    display: flex;
+    justify-content: center;
+}
