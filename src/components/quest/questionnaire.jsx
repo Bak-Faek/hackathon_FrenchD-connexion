@@ -55,7 +55,7 @@ export default function Question() {
   } else if (amsrCases.includes(selectionFinale)) {
     path = "/relaxation";
   } else if (experienceCases.includes(selectionFinale)) {
-    path = "/";
+    path = "/images";
   }
 
   return (
