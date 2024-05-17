@@ -195,7 +195,7 @@ function ResponsiveAppBar() {
                 textTransform: 'uppercase',
               }}
             >
-              <Link to='/home'>ASMR</Link>
+              <Link to='/relaxation'>ASMR</Link>
             </Typography>
           </div>
 
