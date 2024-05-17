@@ -9,3 +9,13 @@
    font-family: shrikhand;
  
 }
+
+.valid {
+    background-color: darkgreen;
+    
+}
+
+.buttonValidate{
+    display: flex;
+    justify-content: center;
+}
