@@ -12,7 +12,7 @@ export default function Question() {
 <FormControl>
       <FormLabel id="firstQ">L&apos; essentiel pour vous est :</FormLabel>
       <RadioGroup
-       column
+        row
         aria-labelledby="firstQ"
         name="row-radio-buttons-group"
       >
@@ -29,7 +29,7 @@ export default function Question() {
 
       <FormLabel id="secondQ">La déconnexion vous inspire : </FormLabel>
       <RadioGroup
-        column
+        row
         aria-labelledby="firstQ"
         name="row-radio-buttons-group"
       >
@@ -46,7 +46,7 @@ export default function Question() {
 
       <FormLabel id="thirdQ">Vous aspirez à être : </FormLabel>
       <RadioGroup
-        column
+        row
         aria-labelledby="firstQ"
         name="row-radio-buttons-group"
       >
@@ -62,7 +62,6 @@ export default function Question() {
       </RadioGroup>
     </FormControl>
     </div>
-    
   );
 }
 

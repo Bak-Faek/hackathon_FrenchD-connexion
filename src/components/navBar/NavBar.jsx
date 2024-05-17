@@ -8,7 +8,6 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-
 import MenuItem from "@mui/material/MenuItem";
 
 const pages = ["Expériences", "Chamanisme", "ASMR"];
@@ -163,6 +162,23 @@ function ResponsiveAppBar() {
               }}
             >
               <Link to='/home'>Expériences</Link>
+            </Typography>
+            <Typography
+              variant='h6'
+              noWrap
+              component='a'
+              sx={{
+                mr: 2,
+                display: { xs: 'none', md: 'flex' },
+                fontFamily: 'shrikhand',
+                fontWeight: 700,
+                letterSpacing: '.3rem',
+                color: 'black',
+                textDecoration: 'none',
+                textTransform: 'uppercase',
+              }}
+            >
+              <Link to='/shaman'>Chamanisme</Link>
             </Typography>
             <Typography
               variant='h6'
