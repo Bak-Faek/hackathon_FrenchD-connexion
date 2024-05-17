@@ -45,10 +45,9 @@ const ImagesPage = () => {
       <h3>
         Partez à la découverte des endroits qui vous ont toujours fait rêver!
       </h3>
-      <h4>Vous avez un large choix de destinations insolites. </h4>
       <p>
         Plongez dans une immersion dans l'univers déconnecté! A l'abris des
-        routines mouvementées, au quotien souvent agité entre travail et
+        routines mouvementées, au quotidien souvent agité entre travail et
         domicile.
         <br /> Venez vivre un dépaysement à travers une aventure et une
         expédition authentiques et inoubliables.
