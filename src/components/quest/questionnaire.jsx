@@ -17,31 +17,69 @@ export default function Question() {
   };
 
   const selectionFinale = selection.toString();
-  const case1 = "chamane1,coaching2,sport1";
-  let path = selectionFinale === case1 ? "/shaman" : "";
 
-  console.log(path);
+  const shamanCases = [
+    "chaman,coaching,chaman",
+    "chaman,sport,chaman",
+    "chaman,chaman,sport",
+    "chaman,chaman,coaching",
+    "coaching,chaman,chaman",
+    "sport,chaman,chaman",
+    "chaman,chaman,chaman",
+  ];
+
+  const amsrCases = [
+    "coaching,coaching,sport",
+    "coaching,coaching,chaman",
+    "chaman,coaching,coaching",
+    "sport,coaching,coaching",
+    "coaching,chaman,coaching",
+    "coaching,sport,coaching",
+    "coaching,coaching,coaching",
+  ];
+
+  const experienceCases = [
+    "sport,sport,sport",
+    "sport,sport,chaman",
+    "sport,sport,coaching",
+    "chaman,sport,sport",
+    "coaching,sport,sport",
+    "sport,chaman,sport",
+    "sport,coaching,sport",
+  ];
+
+  let path = "";
+
+  if (shamanCases.includes(selectionFinale)) {
+    path = "/shaman";
+  } else if (amsrCases.includes(selectionFinale)) {
+    path = "/relaxation";
+  } else if (experienceCases.includes(selectionFinale)) {
+    path = "/";
+  }
 
   return (
     <div className="Q">
       <FormControl>
-        <FormLabel id="firstQ">L&apos; essentiel pour vous est :</FormLabel>
+        <FormLabel id="firstQ">
+          Le plus important pour vous c&apos;est :
+        </FormLabel>
         <RadioGroup row aria-labelledby="firstQ" name="row-radio-buttons-group">
           <FormControlLabel
             onClick={handleSelect}
-            value="chamane1"
+            value="chaman"
             control={<Radio />}
             label="La détente"
           />
           <FormControlLabel
             onClick={handleSelect}
-            value="coaching1"
+            value="coaching"
             control={<Radio />}
             label="Sortir des sentiers"
           />
           <FormControlLabel
             onClick={handleSelect}
-            value="sport1"
+            value="sport"
             control={<Radio />}
             label="Etre guidé"
           />
@@ -58,19 +96,19 @@ export default function Question() {
         <RadioGroup row aria-labelledby="firstQ" name="row-radio-buttons-group">
           <FormControlLabel
             onClick={handleSelect}
-            value="chamane2"
+            value="chaman"
             control={<Radio />}
             label="La spiritualié"
           />
           <FormControlLabel
             onClick={handleSelect}
-            value="coaching2"
+            value="coaching"
             control={<Radio />}
             label="Le défoulememt"
           />
           <FormControlLabel
             onClick={handleSelect}
-            value="sport2"
+            value="sport"
             control={<Radio />}
             label="L'accompagnement"
           />
@@ -87,19 +125,19 @@ export default function Question() {
         <RadioGroup row aria-labelledby="firstQ" name="row-radio-buttons-group">
           <FormControlLabel
             onClick={handleSelect}
-            value="chamane1"
+            value="chaman"
             control={<Radio />}
             label="Seul"
           />
           <FormControlLabel
             onClick={handleSelect}
-            value="coaching1"
+            value="coaching"
             control={<Radio />}
             label="En groupe"
           />
           <FormControlLabel
             onClick={handleSelect}
-            value="sport1"
+            value="sport"
             control={<Radio />}
             label="Peu-importe"
           />
