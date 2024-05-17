@@ -11,7 +11,7 @@ function Shaman() {
         <h3>Découvrez nos Chamans</h3>
         <div className="shaman">
           <div className="intro">
-            <img src="./matthieu.jpg" alt="" />
+            <img className="shamanImage" src="./matthieu.jpg" alt="" />
 
             <h3>Mattieu</h3>
           </div>
