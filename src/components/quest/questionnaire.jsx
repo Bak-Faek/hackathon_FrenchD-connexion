@@ -10,54 +10,54 @@ export default function Question() {
   return (
     <div className='Q'>
 <FormControl>
-      <FormLabel id="firstQ">L&apos;essentiel pour vous est:</FormLabel>
+      <FormLabel id="firstQ">L&apos; essentiel pour vous est :</FormLabel>
       <RadioGroup
        column
         aria-labelledby="firstQ"
         name="row-radio-buttons-group"
       >
-        <FormControlLabel value="chamane1" control={<Radio />} label="la détente" />
+        <FormControlLabel value="chamane1" control={<Radio />} label="La détente" />
         <FormControlLabel value="coaching1" control={<Radio />} label="Sortir des sentiers" />
-        <FormControlLabel value="sport1" control={<Radio />} label="être guidé" />
+        <FormControlLabel value="sport1" control={<Radio />} label="Etre guidé" />
         <FormControlLabel
           value="disabled"
           disabled
           control={<Radio />}
-          label="other"
+          label="Autre"
         />
       </RadioGroup>
 
-      <FormLabel id="secondQ">La deconnexion vous inspire: </FormLabel>
+      <FormLabel id="secondQ">La déconnexion vous inspire : </FormLabel>
       <RadioGroup
         column
         aria-labelledby="firstQ"
         name="row-radio-buttons-group"
       >
-        <FormControlLabel value="chamane2" control={<Radio />} label="la spiritualié" />
-        <FormControlLabel value="coaching2" control={<Radio />} label="le défoulememt" />
-        <FormControlLabel value="sport2" control={<Radio />} label="l'accompagnement" />
+        <FormControlLabel value="chamane2" control={<Radio />} label="La spiritualié" />
+        <FormControlLabel value="coaching2" control={<Radio />} label="Le défoulememt" />
+        <FormControlLabel value="sport2" control={<Radio />} label="L'accompagnement" />
         <FormControlLabel
           value="disabled"
           disabled
           control={<Radio />}
-          label="other"
+          label="Autre"
         />
       </RadioGroup>
 
-      <FormLabel id="thirdQ">Vous aspirez à être: </FormLabel>
+      <FormLabel id="thirdQ">Vous aspirez à être : </FormLabel>
       <RadioGroup
         column
         aria-labelledby="firstQ"
         name="row-radio-buttons-group"
       >
-        <FormControlLabel value="chamane1" control={<Radio />} label="seul" />
-        <FormControlLabel value="coaching1" control={<Radio />} label="en groupe" />
-        <FormControlLabel value="sport1" control={<Radio />} label="peu-importe" />
+        <FormControlLabel value="chamane1" control={<Radio />} label="Seul" />
+        <FormControlLabel value="coaching1" control={<Radio />} label="En groupe" />
+        <FormControlLabel value="sport1" control={<Radio />} label="Peu-importe" />
         <FormControlLabel
           value="disabled"
           disabled
           control={<Radio />}
-          label="other"
+          label="Autre"
         />
       </RadioGroup>
     </FormControl>

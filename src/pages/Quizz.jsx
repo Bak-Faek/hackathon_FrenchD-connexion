@@ -6,11 +6,12 @@ function QuizzPage() {
     return (
       <section>
         <NavBar />
-        <div className="quest_butt">
-        <Question classeName="quest"/>
-          <ButtonValidate className="butVal" />
+        <div className='quest_butt'>
+          <Question classeName='quest' />
+          <ButtonValidate className='butVal'  />
         </div>
-        </section>
+      
+      </section>
     );
 }
 

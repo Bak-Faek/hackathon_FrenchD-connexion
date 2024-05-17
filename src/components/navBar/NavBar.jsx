@@ -33,7 +33,7 @@ function ResponsiveAppBar() {
         display: 'flex',
         justifyContent: 'space-between',
       }}
-      position='static'
+      position='sticky'
     >
       <Container maxWidth='xl'>
         <Toolbar disableGutters>
