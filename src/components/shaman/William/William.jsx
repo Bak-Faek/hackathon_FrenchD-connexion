@@ -48,7 +48,7 @@ export default function William() {
         </div>
 
         <div className="contact">
-          <h3>Pour rejoindre Matthieu :</h3>
+          <h3>Pour rejoindre William :</h3>
           <p>Oasis de William</p>
           <p>Chemin des Âmes Libres</p>
           <p>Cœur du Désert</p>
