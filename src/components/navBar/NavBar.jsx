@@ -118,7 +118,7 @@ function ResponsiveAppBar() {
                 textTransform: 'uppercase',
               }}
             >
-              <Link to='/'>LOGO</Link>
+              {/* <Link to='/'>LOGO</Link> */}
             </Typography>
           </div>
 
