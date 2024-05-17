@@ -8,7 +8,6 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-
 import MenuItem from "@mui/material/MenuItem";
 
 const pages = ["Expériences", "Chamanisme", "ASMR"];
