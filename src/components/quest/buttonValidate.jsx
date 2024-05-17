@@ -8,7 +8,8 @@ function ButtonValidate() {
         variant='contained'
         buttonValidate
         sx={{
-          height: '150%',
+          // height: '150%',
+          height:'auto',
           color: 'black',
           fontWeight: 'bold',
           fontSize: 18,

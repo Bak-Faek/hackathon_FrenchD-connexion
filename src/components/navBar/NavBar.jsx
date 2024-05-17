@@ -161,7 +161,7 @@ function ResponsiveAppBar() {
                 textTransform: 'uppercase',
               }}
             >
-              <Link to='/home'>Expériences</Link>
+              <Link to='/Images'>Expériences</Link>
             </Typography>
             <Typography
               variant='h6'
@@ -195,7 +195,7 @@ function ResponsiveAppBar() {
                 textTransform: 'uppercase',
               }}
             >
-              <Link to='/home'>ASMR</Link>
+              <Link to='/relaxation'>ASMR</Link>
             </Typography>
           </div>
 
