@@ -64,7 +64,7 @@ export default function Question() {
         <FormLabel id="firstQ">
           Le plus important pour vous c&apos;est :
         </FormLabel>
-        <RadioGroup row aria-labelledby="firstQ" name="row-radio-buttons-group">
+        <RadioGroup column aria-labelledby="firstQ" name="row-radio-buttons-group">
           <FormControlLabel
             onClick={handleSelect}
             value="chaman"
@@ -93,7 +93,7 @@ export default function Question() {
         </RadioGroup>
 
         <FormLabel id="secondQ">La déconnexion vous inspire : </FormLabel>
-        <RadioGroup row aria-labelledby="firstQ" name="row-radio-buttons-group">
+        <RadioGroup column aria-labelledby="firstQ" name="row-radio-buttons-group">
           <FormControlLabel
             onClick={handleSelect}
             value="chaman"
@@ -122,7 +122,7 @@ export default function Question() {
         </RadioGroup>
 
         <FormLabel id="thirdQ">Vous aspirez à être : </FormLabel>
-        <RadioGroup row aria-labelledby="firstQ" name="row-radio-buttons-group">
+        <RadioGroup colomn aria-labelledby="firstQ" name="row-radio-buttons-group">
           <FormControlLabel
             onClick={handleSelect}
             value="chaman"
