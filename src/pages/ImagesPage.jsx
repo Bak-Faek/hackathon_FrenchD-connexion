@@ -41,6 +41,30 @@ const ImagesPage = () => {
   }
 
   return (
+    <div className="images-container" onMouseMove={handleMouseMove}>
+      <h2>Vos destinations</h2>
+      <h3>
+        Partez à la découverte des endroits qui vous ont toujours fait rêver!
+      </h3>
+      <p>
+        Plongez dans une immersion dans l'univers déconnecté! A l'abris des
+        routines mouvementées, au quotidien souvent agité entre travail et
+        domicile.
+        <br /> Venez vivre un dépaysement à travers une aventure et une
+        expédition authentiques et inoubliables.
+      </p>
+      {groupedImages.map((group, index) => (
+        <div key={index}>
+          <div className="image-group">
+            {group.map((image) => (
+              <img
+                key={image.id}
+                src={image.src}
+                alt={image.alt}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              />
+            ))}
     <>
       <NavBar />
       <div className="images-container" onMouseMove={handleMouseMove}>

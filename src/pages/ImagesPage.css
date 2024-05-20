@@ -15,10 +15,24 @@ body {
   gap: 3rem;
 }
 
+
+.images-container h2 {
+  font-size: 5rem;
+}
+.images-container h3, h4 p {
+  line-height: 5rem;
+  font-size: 2.3rem;
+  
+  
 .images-container h2,
 h3 {
   line-height: 5rem;
 }
+
+.images-container p {
+  font-size: 1.3rem;
+}
+
 
 .image-group {
   display: flex;
