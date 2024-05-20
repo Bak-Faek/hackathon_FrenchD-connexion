@@ -6,6 +6,7 @@
   height: 100%;
   gap: 5rem;
   padding: 3rem 0;
+  background-color:#DFD5C7 ;
 }
 body {
   height: 100vh;
@@ -19,8 +20,9 @@ body {
 }
 
 .shamanImage {
-  border-radius: 50%;
+border-radius: 50%;
   object-fit: contain;
+  height: auto;
 
 }
 
@@ -30,5 +32,15 @@ body {
   width: 40%;
   gap: 2rem;
   text-align: center;
+  font-size: 2rem;
+}
+
+h3{
+  font-family: shrikhand;
+  padding: 32px;
+  text-transform: uppercase;
+}
+
+.title-shaman{
   font-size: 2rem;
 }

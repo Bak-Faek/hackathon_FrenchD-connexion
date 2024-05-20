@@ -11,7 +11,7 @@ function App() {
       
       <main>
         <Outlet />
-        <ReactAudioPlayer src="/music.mp3" autoPlay controls />
+        <ReactAudioPlayer src="/music.mp3" autoPlay  />
         {/* <Pomodoro/> */}
       </main>
     </>

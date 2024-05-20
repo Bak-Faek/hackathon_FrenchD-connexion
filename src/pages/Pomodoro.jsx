@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Settings from '../components/settings/Settings';
 import Timer from '../components/timer/Timer';
 import SettingsContext from '../context/SettingsContext';
+import NavBar from '../components/navBar/NavBar'
 import './Pomodoro.css'
 
 function Pomodoro() {
@@ -10,22 +11,25 @@ function Pomodoro() {
   const [breakMinutes, setBreakMinutes] = useState(15);
    const [mode, setMode] = useState('work');
   return (
-    <div className='container-pomodoro'>
-      <SettingsContext.Provider
-        value={{
-          showSettings,
-          setShowSettings,
-          workMinutes,
-          breakMinutes,
-          setWorkMinutes,
-          setBreakMinutes,
-          mode,
-          setMode,
-        }}
-      >
-        {showSettings ? <Settings /> : <Timer />}
-      </SettingsContext.Provider>
-    </div>
+    <>
+      <NavBar />
+      <div className='container-pomodoro'>
+        <SettingsContext.Provider
+          value={{
+            showSettings,
+            setShowSettings,
+            workMinutes,
+            breakMinutes,
+            setWorkMinutes,
+            setBreakMinutes,
+            mode,
+            setMode,
+          }}
+        >
+          {showSettings ? <Settings /> : <Timer />}
+        </SettingsContext.Provider>
+      </div>
+    </>
   );
 }
 
